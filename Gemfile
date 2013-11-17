@@ -32,7 +32,17 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :production do
+# only do stuff that is going into site here
+end
+
+group :test, :development do
+# only do stuff for testing here
+end
+
 gem 'twitter-bootstrap-rails'
+
+gem 'simple_form'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
